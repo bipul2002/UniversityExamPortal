@@ -1,0 +1,22 @@
+<mat-card>
+    <mat-action-list>
+        <div mat-subheader> Availabe Semesters</div>
+
+        <!-- <button class="mt15 mb15" mat-list-item routerLink="/user-dashboard/0">
+          <mat-icon mat-list-icon>home</mat-icon>Home
+        </button> -->
+
+        <button class="mt15 mb15" mat-list-item routerLink="/user-dashboard/0">
+            <mat-icon mat-list-icon>book</mat-icon>All Subjects
+        </button>
+
+        <button 
+        [routerLink]="'/user-dashboard/' + semester.cid"
+        class="mt15 mb15" mat-list-item *ngFor="let semester of semesters">
+            <mat-icon mat-list-icon>book</mat-icon>{{ semester.title }}
+        </button>
+
+    </mat-action-list>
+</mat-card>
+
+<!-- {{semesters|json}} -->

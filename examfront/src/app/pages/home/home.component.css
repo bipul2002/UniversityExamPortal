@@ -1,0 +1,35 @@
+.image_position{
+    margin-top: -45px;
+    margin-left: 25px;
+    
+}
+
+.title_design{
+    margin-top: 10%;
+    margin-left: 15%;
+    font-size: 60px;
+}
+.sub-title_design{
+    margin-top: 5%;
+    margin-left: 15%;
+    font-size: 20px;
+    line-height: normal;
+    color:rgb(106, 101, 101);
+}
+
+.signup_button{
+    background-color: rgb(85, 85, 183);
+    color: white;
+    margin-left: 15%;
+    margin-top: 5%;
+    font-size: 20px;
+    
+}
+
+.login_button{
+    background-color: rgb(239, 50, 110);
+    color: white;
+    margin-left: 5%;
+    margin-top: 5%;
+    font-size: 20px;
+}

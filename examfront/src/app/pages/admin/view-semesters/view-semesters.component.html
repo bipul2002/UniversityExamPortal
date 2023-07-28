@@ -1,0 +1,41 @@
+<mat-card>
+    <h1 class="ml20 mt20">All Semesters</h1>
+</mat-card>
+
+<mat-card class="mt10"  *ngFor="let semester of Semesters">
+    
+    <mat-card-header class="mb10">
+       <mat-card-title>
+           {{semester.title}}
+       </mat-card-title>
+
+    </mat-card-header>
+    <mat-card-content>
+       <p>{{semester.description}}</p>
+    </mat-card-content>
+</mat-card>
+
+<div class="container text-center mt20 mb20">
+    <button mat-raised-button color="accent" routerLink="/admin/add-semester">Add New Semester</button>
+</div>
+
+
+
+
+
+<!-- <mat-card>
+    
+    <mat-list>
+        <mat-list-item *ngFor="let subject of Subjects">
+            
+            <div mat-line class="row" style="margin-left: 0px;"> <mat-icon mat-list-icon>subject</mat-icon> {{ subject.title }}</div>
+            <div mat-line style="margin-left: 28px;">{{ subject.description }}</div>
+            <mat-divider></mat-divider>
+        </mat-list-item>
+    </mat-list>
+
+    <div class="container text-center mt20 mb20">
+        <button mat-raised-button color="accent" routerLink="/admin/add-subject">Add New Subject</button>
+    </div>
+
+</mat-card> -->

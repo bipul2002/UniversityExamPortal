@@ -1,0 +1,95 @@
+<mat-card>
+    <h1 class="mt15 ml15 text-center">Add New Subject</h1>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 offset-md-2">
+          <form *ngIf = "subject" (submit)="updateData()">
+            <!-- title field -->
+  
+            <mat-form-field class="example-full-width">
+              <mat-label>Title</mat-label>
+              <input
+                [(ngModel)]="subject.title"
+                required
+                name="title"
+                matInput
+                placeholder="Enter here"
+              />
+            </mat-form-field>
+  
+            <mat-form-field class="example-full-width">
+              <mat-label>Description</mat-label>
+              <textarea
+                [(ngModel)]="subject.description"
+                name="description"
+                matInput
+                placeholder="Enter here"
+              ></textarea>
+            </mat-form-field>
+  
+            <div class="row">
+              <div class="col-md-6">
+                <!-- max marks -->
+                <mat-form-field class="example-full-width">
+                  <mat-label>Max Marks</mat-label>
+                  <input
+                    [(ngModel)]="subject.maxMarks"
+                    name="maxMarks"
+                    matInput
+                    placeholder="Enter here"
+                  />
+                </mat-form-field>
+              </div>
+              <div class="col-md-6">
+                <!-- number of questions -->
+                <mat-form-field class="example-full-width">
+                  <mat-label>No of Questions</mat-label>
+                  <input
+                    [(ngModel)]="subject.numberOfQuestions"
+                    name="noOfQuestions"
+                    matInput
+                    placeholder="Enter here"
+                  />
+                </mat-form-field>
+              </div>
+            </div>
+  
+            <!-- active field -->
+  
+            <section class="mb20">
+              <mat-slide-toggle
+                name="active"
+                [(ngModel)]="subject.active"
+                class="mt20"
+              >
+                Publish Status
+              </mat-slide-toggle>
+            </section>
+  
+            <!-- category select -->
+  
+            <mat-form-field class="mt20 w100">
+              <mat-label>Semesters</mat-label>
+              <mat-select
+                name="category"
+                [(ngModel)]="subject.category.cid"
+              >
+                <mat-option
+                  *ngFor="let semester of semesters"
+                  [value]="semester.cid"
+                >
+                  {{ semester.title }}
+                </mat-option>
+              </mat-select>
+            </mat-form-field>
+  
+            <div class="container text-center mt15 mb15">
+              <button mat-raised-button color="accent" type="submit">Update</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </mat-card>
+
+  

@@ -1,0 +1,96 @@
+html, body {
+    height: 100%;
+    background-image: url("../src/assets/BackgroundImage.jpg");
+    height: 100%;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
+body { 
+    margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; 
+}
+.text-center {
+    text-align: center;
+}
+
+
+.sp5{
+    word-spacing: 5px;
+}
+  
+
+.ml20{
+    margin-left: 20px !important;
+}
+.mr20{
+    margin-right: 20px !important;
+}
+.mt20{
+    margin-top : 20px !important;
+}
+.mb20{
+    margin-bottom: 20px !important;
+}
+
+
+.ml15{
+    margin-left: 15px !important;
+}
+.mr15{
+    margin-right: 15px !important;
+}
+.mt15{
+    margin-top : 15px !important;
+}
+.mb15{
+    margin-bottom: 15px !important;
+}
+
+.ml10{
+    margin-left: 10px !important;
+}
+.mr10{
+    margin-right: 10px !important;
+}
+.mt10{
+    margin-top : 10px !important;
+}
+.mb10{
+    margin-bottom: 10px !important;
+}
+
+.ml5{
+    margin-left: 5px !important;
+}
+.mr5{
+    margin-right: 5px !important;
+}
+.mt5{
+    margin-top : 5px !important;
+}
+.mb5{
+    margin-bottom: 5px !important;
+}
+
+/* .ml20{
+    margin-bottom: 10px !important;
+}
+.mr20{
+    margin-bottom:10px !important;
+}
+.mt20{
+    margin-bottom: 10px !important;
+}
+.mb20{
+    margin-bottom: 10px !important;
+}
+.ml40{
+    margin-bottom: 40px !important;
+}
+.mr40{
+    margin-bottom: 40px !important;
+} */
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
