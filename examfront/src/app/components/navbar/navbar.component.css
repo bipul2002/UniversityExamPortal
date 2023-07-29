@@ -1,3 +1,11 @@
 .example-spacer {
     flex: 1 1 auto;
   }
+
+/* .navbar{
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+} */

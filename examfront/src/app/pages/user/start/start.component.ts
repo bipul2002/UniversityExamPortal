@@ -1,5 +1,6 @@
 import { LocationStrategy } from '@angular/common';
 import { Component,OnInit } from '@angular/core';
+import { Title } from '@angular/platform-browser';
 import { ActivatedRoute } from '@angular/router';
 import { QuestionService } from 'src/app/services/question.service';
 import { SubjectService } from 'src/app/services/subject.service';
@@ -20,7 +21,7 @@ export class StartComponent implements OnInit{
 
   marksGot = 0;
   correctAnswer = 0;
-  attempted = 0;
+  
 
 
 
@@ -60,6 +61,44 @@ export class StartComponent implements OnInit{
     });
   }
 
+  submitQuiz()
+  {
+    Swal.fire({
+      title: 'Do you want to submit the test?',
+
+      showCancelButton:true,
+      confirmButtonText: 'submit',
+      
+      icon: 'info',
+
+    }).then((e)=>{
+      if(e.isConfirmed)
+      {
+        //calculation
+        this.questions.forEach((q:any)=>{
+          if(q.givenAnswer == q.answer){
+            this.correctAnswer++;
+            let markSingle = this.questions[0].quiz.maxMarks/this.questions.length;
+            this.marksGot += markSingle;
+          }
+
+         
+          
+          
+
+        });
+        console.log("Correct Answer:" + this.correctAnswer);
+        console.log("Marks Got" + this.marksGot);
+
+      }
+
+    });
+  }
+
   
+    
+  
+
+
 
 }

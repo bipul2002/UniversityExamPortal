@@ -10,3 +10,7 @@
     background-image: url("../../../../assets/exam.png");
     background-size: cover;
 }
+
+.subjectCard{
+    width: 100%;
+}
